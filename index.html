@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <H1>Rangkuman Materi Git</H1>
-    <H2>Intro</H2>
-    <p>GIT, yang diciptakan oleh Linus Torvalds, adalah sebuah version control system yang sangat berguna dalam pengembangan perangkat lunak. Dengan kemampuannya untuk mencatat setiap perubahan file dalam source code kita, GIT memungkinkan kita untuk menyimpan seluruh versi source code dengan mudah. Ini tidak hanya mempermudah dalam membuat versi dari sistem dan melakukan backup source code, tetapi juga memungkinkan kolaborasi yang efisien dalam pengembangan proyek. Programmers dari seluruh dunia dapat bekerja sama dalam proyek-proyek open source, membuat berkontribusi menjadi lebih mudah dan menyederhanakan proses tracking perubahan. Selain itu, GIT membantu dalam memahami cara deploy modern, menjadikannya alat yang tak tergantikan saat ingin membangun sistem dengan berkolaborasi dan mengelola perubahan dalam kode sumber.</p>
+  </head>
+  <body>
+    <h1>Rangkuman Materi Git</h1>
+    <h2>Intro</h2>
+    <p>
+      GIT, yang diciptakan oleh Linus Torvalds, adalah sebuah version control system yang sangat berguna dalam pengembangan perangkat lunak. Dengan kemampuannya untuk mencatat setiap perubahan file dalam source code kita, GIT memungkinkan
+      kita untuk menyimpan seluruh versi source code dengan mudah. Ini tidak hanya mempermudah dalam membuat versi dari sistem dan melakukan backup source code, tetapi juga memungkinkan kolaborasi yang efisien dalam pengembangan proyek.
+      Programmers dari seluruh dunia dapat bekerja sama dalam proyek-proyek open source, membuat berkontribusi menjadi lebih mudah dan menyederhanakan proses tracking perubahan. Selain itu, GIT membantu dalam memahami cara deploy modern,
+      menjadikannya alat yang tak tergantikan saat ingin membangun sistem dengan berkolaborasi dan mengelola perubahan dalam kode sumber.
+    </p>
 
-    <br>
+    <br />
     <h2>Fundamental</h2>
-    <p>Perintah-perintah dasar dalam mengoperasikan GIT merupakan fondasi yang penting bagi pengembang perangkat lunak. Mereka membantu dalam memulai dan mengelola proyek dengan baik. Dengan menggunakan perintah seperti "git init" untuk memulai repository GIT, "git config" untuk mengatur konfigurasi, "git status" untuk melihat status perubahan dalam proyek, "git add" untuk menambahkan file ke dalam staging area, dan "git commit" untuk menyimpan perubahan, pengembang dapat menjaga proyek mereka terdokumentasi dan terorganisir dengan baik. Selain itu, perintah "git clone" memungkinkan pengguna untuk menggandakan repository yang sudah ada, sangat membantu dalam proyek kolaboratif.</p>
-    <p>Penggunaan perintah-perintah GIT ini tidak hanya membuat pengembangan proyek lebih terstruktur, tetapi juga meningkatkan fleksibilitas dalam mengeksplorasi berbagai fitur GIT yang lebih canggih. Manfaat utama dari penguasaan perintah-perintah dasar ini adalah mempercepat kemajuan proyek, terutama dalam proyek kolaboratif di mana berbagai pengembang perlu berkoordinasi. Jadi, pengetahuan dan penggunaan perintah-perintah dasar GIT ini sangat penting saat mengerjakan proyek, memastikan kualitas, dokumentasi yang baik, dan efisiensi dalam pengembangan perangkat lunak.</p>
+    <p>
+      Perintah-perintah dasar dalam mengoperasikan GIT merupakan fondasi yang penting bagi pengembang perangkat lunak. Mereka membantu dalam memulai dan mengelola proyek dengan baik. Dengan menggunakan perintah seperti "git init" untuk
+      memulai repository GIT, "git config" untuk mengatur konfigurasi, "git status" untuk melihat status perubahan dalam proyek, "git add" untuk menambahkan file ke dalam staging area, dan "git commit" untuk menyimpan perubahan, pengembang
+      dapat menjaga proyek mereka terdokumentasi dan terorganisir dengan baik. Selain itu, perintah "git clone" memungkinkan pengguna untuk menggandakan repository yang sudah ada, sangat membantu dalam proyek kolaboratif.
+    </p>
+    <p>
+      Penggunaan perintah-perintah GIT ini tidak hanya membuat pengembangan proyek lebih terstruktur, tetapi juga meningkatkan fleksibilitas dalam mengeksplorasi berbagai fitur GIT yang lebih canggih. Manfaat utama dari penguasaan
+      perintah-perintah dasar ini adalah mempercepat kemajuan proyek, terutama dalam proyek kolaboratif di mana berbagai pengembang perlu berkoordinasi. Jadi, pengetahuan dan penggunaan perintah-perintah dasar GIT ini sangat penting saat
+      mengerjakan proyek, memastikan kualitas, dokumentasi yang baik, dan efisiensi dalam pengembangan perangkat lunak.
+    </p>
 
- 
-
-</body>
+    <h2>Branch</h2>
+    <p>
+      Branching dalam GIT adalah salah satu fitur yang sangat penting dan bermanfaat dalam pengembangan perangkat lunak. Ini memungkinkan pengembang untuk membuat salinan atau cabang dari repository yang ada, yang dapat digunakan untuk
+      mengembangkan fitur baru atau melakukan eksperimen tanpa memengaruhi branch utama. Keuntungan utama dari penggunaan branch adalah kemampuannya untuk mendukung pengembangan paralel, di mana beberapa pengembang dapat bekerja secara
+      bersamaan pada fitur-fitur berbeda. Selain itu, branch juga dapat digunakan untuk mengelola pengembangan dengan lebih terstruktur, seperti memiliki branch untuk pengujian (test branch), pengembangan yang belum stabil (unstable
+      branch), dan versi yang stabil (stable branch), sehingga memudahkan manajemen proyek.
+    </p>
+    <p>
+      Dalam pembahasan branch, terdapat beberapa perintah GIT yang berguna. "Git branch" digunakan untuk melihat semua branch lokal, sedangkan "git branch --all" dapat digunakan untuk melihat semua branch baik lokal maupun publik. Pengguna
+      dapat membuat branch baru dengan "git branch nama_branch" dan beralih ke branch tersebut menggunakan "git checkout nama_branch". Branch yang sudah tidak diperlukan lagi dapat dihapus dengan "git branch -d nama_branch". Untuk
+      menggabungkan perubahan dari dua branch, kita dapat menggunakan "git merge nama_branch", namun perlu memastikan tidak ada file yang belum di-commit. Terkadang, saat menggabungkan branch, bisa terjadi konflik ketika ada perubahan pada
+      file yang sama. Dalam kondisi konflik, kita harus menyelesaikan konflik tersebut sebelum dapat melakukan commit, memastikan integritas kode yang dihasilkan tetap terjaga.
+    </p>
+  </body>
 </html>
